@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Include Google Font -->
+</head>
+<body>
+ 
+    <form class="form-container" id="form-data" method="post">
+        <div class="header-container">
+            <div class="background-logo"></div>
+            <div class="school-info">
+                <h1>ASTRA PRESCHOOL</h1>
+                <h4>5th Cross, Ganesh Temple Road, Sadashiv Nagar,<br>
+                    Tumkur - 572101</h4>
+                <h4>Phone: 9008887230</h4>
+            </div>
+        </div>
+
+        
+    <hr>
+        <div class="form-group">
+            <label class="label-field" for="fname">Name:</label>
+            <input type="text" id="Name" name="Name" placeholder="Student Name">
+            <label class="label-field" for="class">Class:</label>
+            <select id="Class" name="Class" class="styled-select">
+                <option value="Play Group">Play Group</option>
+                <option value="LKG">LKG</option>
+                <option value="UKG">UKG</option>
+                <option value="Day Care">Day Care</option>
+            </select>
+
+        </div>
+
+        <div class="form-group">
+            <label class="label-field" for="Fees">Fee Paid:</label>
+            <input type="number" id="Fees" name="Fees" placeholder="Fees Paid" step="100" >
+            <label class="label-field" for="BooksAmount">Books:</label>
+            <input type="number" id="BooksAmount" name="BooksAmount" placeholder="Books Amount" step="100">
+
+        </div>
+        <div class="form-group">
+            <label class="label-field" for="FeeBalance">Balance:</label>
+            <input type="number" id="FeeBalance" name="FeeBalance" placeholder="Fee Balance" step="100">
+            <label class="label-field" for="UniformAmount">Uniform:</label>
+            <input type="number" id="UniformAmount" name="UniformAmount" placeholder="Uniform Amount" step="100">
+        </div>
+        <div class="form-group">
+            <label class="label-field" for="FeePaidDate">Date:</label>
+            <input type="date" id="FeePaidDate" name="FeePaidDate" placeholder="Fee Paid Date" required><br>
+        </div>
+<div class="padding-button">
+        <input type="submit" value="Submit" id="submit-btn" disabled>
+        <button type="button" class="clear-button" onclick="clearForm()">Clear</button>
+        <button type="button" class="pdf-button" onclick="downloadPDF()"></button>
+    </form>
+</div>
+    <form action="/search" method="get">
+        <input type="text" placeholder="Search student..." name="search">
+        <button type="submit" class="icon-button"></button>
+    </form>
+    <script src="env.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

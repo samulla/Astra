@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.search-container input[type=submit]:hover {
+    background-color: #0056b3;
+}
+.searchbar-container {
+    width:450px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-left: 100px;
+}
+.school-info {
+    line-height: 1.2;
+}
+.background-logo {
+    background-image: url('logo.png'); /* Relative path */
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 190px;
+    width: 190px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+}
+h3, h5 {
+    margin: 5px 0;
+}
+.padding {
+    /* padding-left: 20px; */
+    margin-right: 50px
+}
+.padding-button {
+    padding-left: 120px;
+}
+.form-container {
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+.form-container input, .form-container select {
+    margin-bottom: 10px;
+}
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.form-group label {
+    width: 150px; /* Adjust width as necessary */
+    margin-right: 10px; /* Reduce space between label and input */
+}
+.form-group input, .form-group select {
+    margin-right: 20px; /* Adjust spacing as necessary */
+}
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust spacing as necessary */
+}
+input[type=text], input[type=number], input[type=date] {
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: lemonchiffon;
+}
+hr {
+    border: 1px solid #000; /* Customize the line as necessary */
+    margin: 20px 0; /* Adjust spacing as necessary */
+}
+input[type="text"], input[type="number"], input[type="date"], select {
+    font-family: 'Roboto', sans-serif; /* Change this to your desired font */
+    font-size: 18px; /* Adjust the font size as needed */
+}
+::placeholder {
+    font-family: 'Open Sans', sans-serif; /* Font for placeholder text */
+    font-size: 14px; /* Adjust the font size as needed */
+    color: #999; /* Placeholder text color */
+}
+
+.icon-button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-image: url('search-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+}
+.pdf-button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-image: url('downloadPDF.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+}
+.icon-button:hover {
+    background-color: #45a049;
+}
+input[type=submit], .clear-button {
+    width: 300px;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.clear-button {
+    background-color: #FF6347; /* Tomato color */
+}
+.clear-button:hover {
+    background-color: #FF4500; /* Orange Red color */
+}
+.pdf-button:hover {
+    background-color: #FF7F50; /* Coral color */
+}
+.print-button {
+    width: 300px;
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.print-button:hover {
+    background-color: #0056b3;
+}
+@media print {
+    body * {
+        display: none;
+    }
+    .padding, .form-container {
+        display: block;
+        visibility: visible;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: white;
+        color: black;
+    }
+}
+
+.styled-select {
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: lemonchiffon;
+    font-size: 16px;
+}
+
+/* Style for dropdown focus and hover states */
+.styled-select:focus, .styled-select:hover {
+    border-color: #007BFF;
+    outline: none;
+}
+.label-field {
+    display: inline-block;
+    width: 150px; /* Adjust the width as necessary */
+    margin-bottom: 10px; /* Adjust spacing as necessary */
+    font-weight: bold; 
+    font-family: 'Aerial', sans-serif; /* Font for placeholder text */
+    font-size: 14px; /* Adjust the font size as needed */
+
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.form-group label {
+    width: 80px;; /* Adjust width as necessary */
+}
+.form-group input {
+    margin-right: 20px; /* Adjust spacing as necessary */
+}
