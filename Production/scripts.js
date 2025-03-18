@@ -69,7 +69,7 @@ form.addEventListener('submit', (e) => {
         alert(`Form submitted successfully for ${firstName}!`);
 
         // Clear form fields but keep the current date
-        clearForm();
+        //clearForm();
     })
     .catch(error => {
         console.error('Error submitting form:', error);
