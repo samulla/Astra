@@ -9,14 +9,14 @@ function getCurrentDate() {
 }
 
 // Set current date as the value of the feePaidDate field
-document.getElementById('feepaiddate').value = getCurrentDate();
+document.getElementById('FeePaidDate').value = getCurrentDate();
 
 // Enable submit button only when all fields are filled
 const form = document.querySelector('.form-container');
 const submitBtn = document.getElementById('submit-btn');
 const inputs = form.querySelectorAll('input[type=text], input[type=number], input[type=date], select');
-const dateInput = document.getElementById('feepaiddate');
-const classSelect = document.getElementById('class');
+const dateInput = document.getElementById('FeePaidDate');
+const classSelect = document.getElementById('Class');
 
 inputs.forEach(input => {
     input.addEventListener('input', () => {
@@ -50,7 +50,7 @@ form.addEventListener('submit', (e) => {
     const formData = new FormData(form);
 
     // Get the student's first name
-    const firstName = formData.get('firstname');
+    const firstName = formData.get('Name');
 
     // Convert FormData to URL-encoded string
     const formDataString = new URLSearchParams(formData).toString();
@@ -69,7 +69,7 @@ form.addEventListener('submit', (e) => {
         alert(`Form submitted successfully for ${firstName}!`);
 
         // Clear form fields but keep the current date
-        clearForm();
+        // clearForm();
     })
     .catch(error => {
         console.error('Error submitting form:', error);
